@@ -1,0 +1,29 @@
+$orange: #DE4243
+$logo-font: 'Coda Caption', sans-serif
+$text-color: black
+=flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo
+    span
+        font-family: $logo-font
+        font-size: 50px
+        color: $text-color
+        font-weight: bolder
+        letter-spacing: 1px
+
+header
+    background-color: $orange
+    +flex
+    padding: 10px 20px
+    img
+        width: 40px
+        height: 40px
+    nav
+        a
+            color: white
+            margin: 0 10px
+            font-weight: bold
+

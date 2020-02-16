@@ -1,0 +1,56 @@
+.logo span {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 50px;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 1px; }
+
+header {
+  background-color: #DE4243;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; }
+  header img {
+    width: 40px;
+    height: 40px; }
+  header nav a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 400px;
+  color: white;
+  display: grid;
+  align-items: center; }
+  .banner div div {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 50%;
+    height: 150px;
+    color: black;
+    text-align: left; }
+    .banner div div form {
+      display: grid;
+      align-item: center; }
+
+input[type='text'] {
+  width: 85%; }
+
+/*# sourceMappingURL=style.css.map */
