@@ -1,0 +1,166 @@
+.logo span {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 50px;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 1px; }
+
+header {
+  background-color: #DE4243;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; }
+  header img {
+    width: 40px;
+    height: 40px; }
+  header nav a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+p {
+  font-size: 14px; }
+
+.filter {
+  background-color: #ebebe8;
+  text-align: center;
+  padding: 20px 15px;
+  margin: 30px 0;
+  display: grid;
+  align-items: center; }
+  .filter h2 {
+    color: #a3a3a0; }
+  .filter form {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 50px 0; }
+    .filter form input {
+      padding: 7px 5px;
+      margin: 5px 0;
+      border-radius: 2px;
+      border: 1px solid #a3a3a0; }
+    .filter form button {
+      padding: 10px;
+      border: none;
+      border-radius: 2px;
+      align-self: flex-end;
+      margin-bottom: 3px;
+      color: white;
+      font-weight: bold; }
+    .filter form button[type="submit"] {
+      background-color: #1ca9eb; }
+    .filter form button[type="reset"] {
+      background-color: #fcb50f; }
+    .filter form option:hover {
+      background-color: #1ca9eb;
+      color: white; }
+
+section {
+  text-align: center;
+  display: grid;
+  grid: 150px repeat(3, auto)/repeat(3, auto);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px; }
+  section h2 {
+    grid-column: 1/span 3; }
+  section div {
+    position: relative; }
+    section div img {
+      width: 350px;
+      height: 350px; }
+    section div div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 99%;
+      color: white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(173, 52, 52, 0.7), rgba(222, 66, 66, 0.7)), url(../images/logo.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: grid;
+      justify-content: center;
+      align-items: center; }
+      section div div h3 {
+        font-weight: normal; }
+      section div div span {
+        font-weight: bolder; }
+    section div div:hover {
+      display: none; }
+
+footer {
+  padding: 30px 20px;
+  background-color: black;
+  color: white; }
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 50px;
+    align-items: center; }
+    footer nav a {
+      color: white; }
+    footer nav img {
+      width: 50px;
+      height: 50px; }
+  footer .logo {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: white; }
+  footer .contact {
+    margin: 30px 0;
+    display: grid;
+    grid: 1fr/repeat(3, 1fr);
+    justify-content: space-evenly;
+    text-align: center; }
+    footer .contact input[type='text'] {
+      width: 50%; }
+    footer .contact input[type='text']:hover {
+      border: 1px solid #a3a3a0;
+      box-shadow: inset 0 1px 1px #fff, 0 0 8px #a3a3a0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(188, 194, 196, 0.6);
+      outline: 0 none; }
+    footer .contact input[type='submit'] {
+      color: white;
+      background-color: #a3a3a0; }
+    footer .contact input[type='submit']:hover {
+      background: white;
+      color: #a3a3a0;
+      border: 1px solid #a3a3a0; }
+    footer .contact a {
+      color: #DE4243; }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2b2b;
+  padding: 0 15px;
+  color: #a3a3a0;
+  font-size: 13px; }
+  .social ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+    .social ul li {
+      margin-right: 10px; }
+      .social ul li a {
+        color: #a3a3a0; }
+
+/*# sourceMappingURL=results.css.map */
