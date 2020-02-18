@@ -2,11 +2,6 @@
   position: relative;
 }
 
-section div div span {
-  font-weight: bolder;
-  margin: 0 10px;
-}
-
 .logo span {
   font-family: "Coda Caption", sans-serif;
   font-size: 50px;
@@ -125,126 +120,90 @@ p {
   font-size: 14px;
 }
 
-.filter {
-  background-color: #ebebe8;
-  text-align: center;
-  padding: 20px 15px;
-  margin: 30px 0;
+main {
+  padding: 40px 30px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ebebe8;
+  box-shadow: 8px -5px 5px #ebebe8, -8px -5px 5px #ebebe8;
+}
+
+.card h2 {
+  color: #de4243;
+}
+
+.title i {
+  margin: 0 10px;
+}
+
+.card h2 i {
+  font-size: 30px;
+}
+
+.card div {
   display: grid;
-  align-items: center;
+  grid: repeat(4, auto)/repeat(2, 1fr);
+  text-align: center;
+  grid-gap: 10px;
 }
 
-section h2 {
-  grid-column: 1/span 3;
-}
-
-.filter h2 {
-  color: #a3a3a0;
-}
-
-.filter form {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: left;
-  margin: 50px 0;
-}
-
-.filter form input {
-  padding: 7px 5px;
-  margin: 5px 0;
-  border-radius: 2px;
+.card div b {
+  padding: 10px 0;
   border: 1px solid #a3a3a0;
 }
 
-.filter form button {
-  padding: 10px;
-  border: none;
-  border-radius: 2px;
-  align-self: flex-end;
-  margin-bottom: 3px;
-  color: white;
-  font-weight: bold;
-}
-
-.filter form button[type="submit"] {
-  background-color: #1ca9eb;
-}
-
-.filter form button[type="reset"] {
-  background-color: #fcb50f;
-}
-
-.filter form option:hover {
-  background-color: #1ca9eb;
-  color: white;
-}
-
-section {
-  text-align: center;
-  display: grid;
-  grid: 150px repeat(3, 350px)/repeat(3, 350px);
-  grid-gap: 20px;
-  justify-content: center;
-  margin-bottom: 30px;
-  padding: 20px;
-}
-
-section div {
-  position: relative;
-}
-
-section div img {
-  width: 100%;
-  height: 100%;
-}
-
-section div div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(173, 52, 52, 0.7), rgba(222, 66, 66, 0.7)), url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  transition: height 1s;
-}
-
-section div div h3 {
-  font-weight: normal;
-  margin: 0;
+.card div b span {
+  color: #1ca9eb;
+  margin: 0 3px;
 }
 
 footer nav a {
   color: white;
 }
 
-section div div a {
+.card a {
+  float: right;
+  margin: 10px 0;
+  background-color: #1ca9eb;
   color: white;
-  font-size: 30px;
-  display: none;
+  padding: 10px 5px;
 }
 
-section div div:hover {
-  height: 20%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(173, 52, 52, 0.9), rgba(222, 66, 66, 0.9));
+.card ul {
+  clear: right;
+  display: flex;
+  margin: auto;
+  width: 80%;
 }
 
-footer .contact a {
+.card ul li {
+  padding: 0 5px;
+  border-right: 1px solid #a3a3a0;
+}
+
+.card ul li i {
+  color: #1ca9eb;
+  margin: 0 3px;
+}
+
+.more {
+  margin: 25px 0;
+  padding: 25px;
+  background-color: #ebebe8;
+  letter-spacing: 10px;
+}
+
+.title {
   color: #de4243;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0;
 }
 
-.social ul li a {
-  color: #a3a3a0;
-}
-
-section div div:hover a {
-  display: block;
+iframe {
+  width: 100%;
 }
 
 footer {
@@ -343,6 +302,10 @@ footer .contact input[type='submit']:hover {
   border: 1px solid #a3a3a0;
 }
 
+footer .contact a {
+  color: #de4243;
+}
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -361,6 +324,10 @@ footer .contact input[type='submit']:hover {
 
 .social ul li {
   margin-right: 10px;
+}
+
+.social ul li a {
+  color: #a3a3a0;
 }
 
 @media screen and (max-width: 768px) {
@@ -392,36 +359,16 @@ footer .contact input[type='submit']:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .filter form {
-    flex-direction: column;
-    padding: 0 10px;
-    align-items: center;
-  }
-
-  .filter form input {
-    width: 100%;
-  }
-
-  .filter form button {
-    align-self: center;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: space-around;
+  .card div b {
+    grid-column: 1/span 2;
   }
 
-  section div {
-    margin: 20px 0;
-  }
-
-  section div img {
-    width: 350px;
-    height: 350px;
+  .card ul {
+    justify-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
   }
 }

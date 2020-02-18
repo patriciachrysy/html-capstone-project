@@ -7,12 +7,14 @@ $text-color: black
     align-items: center
 
 .logo
+    position: relative
     span
         font-family: $logo-font
         font-size: 50px
         color: $text-color
         font-weight: bolder
         letter-spacing: 1px
+        margin: 0 50px
 
 header
     background-color: $orange
@@ -21,9 +23,56 @@ header
     img
         width: 40px
         height: 40px
+        position: absolute
+        top: 25%
+        left: 2%
+        animation-name: top-bounce
+        animation-duration: 1s
+        animation-iteration-count: infinite
+        @keyframes top-bounce
+            0%
+                top: 22%
+            50%
+                top: 28%
+            100%
+                top: 22%
     nav
         a
             color: white
             margin: 0 10px
             font-weight: bold
 
+
+@media screen and ( max-width:1024px  )
+    header
+        justify-content: unset
+        >a
+            align-self: start
+            margin-right: 20%
+        nav
+            align-self: center
+            a
+                margin: 0 40px !important
+            span
+                display: none
+
+
+@media screen and ( max-width:768px  )
+    header
+        display: grid
+        grid: 1fr 1fr / 1fr
+        justify-items: center
+        align-items: center
+        >a
+            margin-right: 0
+        nav
+            display: grid
+            grid: 1fr / repeat(4, 1fr)
+            a
+                margin: 10px 50px !important
+                font-size: 35px
+@media screen and ( max-width:522px  )
+    header
+        nav
+            a
+                margin: 15px !important

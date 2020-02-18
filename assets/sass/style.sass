@@ -6,7 +6,7 @@ $dark: #2a2b2b
 body
     margin: 0
     padding: 0
-    font-family: 'Noto Sans', sans-serif
+    font-family: 'Roboto', sans-serif
 
 a
     text-decoration: none
@@ -23,22 +23,30 @@ p
     background-position: center
     background-size: cover
     text-align: center
-    height: 400px
+    height: 550px
     color: white
     display: grid
     align-items: center
     div
+        h1
+            font-size: 27px
         >div
             background-color: rgba(255, 255, 255, 0.7)
             border-radius: 15px
             padding: 15px
-            margin: 0 auto
+            margin: 0 auto 40px auto
             width: 50%
             height: 150px
             color: black
             text-align: left
             display: grid
             align-items: center
+        a
+            color: $dark
+            background-color: rgba(255, 255, 255, 0.85)
+            padding: 15px 20px
+            border-radius: 2px
+            margin: 30px auto
 
 
 input[type='text']
@@ -74,9 +82,9 @@ input[type='submit']:hover
     text-align: center
     justify-content: center
     align-items: center
-    grid-gap: 20px
     >h2
         grid-column: 1 / span 2
+        color: $orange
     img
         width: 40%
         height: 40%
@@ -121,5 +129,74 @@ input[type='submit']:hover
 
 @import 'footer'
 
-    
+
+@media screen and ( min-width:1025px  )
+    input[type='text']
+        width: 80%
+
+@media screen and ( max-width:1024px  )
+    input[type='text']
+        width: 80%
+    .guidelines
+        div
+            grid-column: 1 / span 2
+    .advantage
+        img
+            height: 200px
+    .access
+        img
+            height: 167px
+
+@media screen and ( max-width:768px  )
+    .banner
+        input[type='submit']
+            margin: 0 !important
+            width: 100%
+        input[type='text']
+            width: 95%
+
+    =coloured-box($color)
+        padding: 30px !important
+        color: white
+        background-color: $color
+        text-align: center
+        height: auto
+        display: grid
+        grid: 1fr auto / 1fr
+        justify-items: center
+        img
+            border-radius: 50%
+            width: 40%
+            grid-row: 1 / span 1
+            align-self: end
+        a
+            color: $color
+            background-color: white
+            padding: 5px 15px
+            border-radius: 2px
+            margin: 10px 0
+        div
+            align-self: start
+
+    .partner
+        +coloured-box($orange)
+
+    .advantage
+        +coloured-box($grey)
+        img
+            height: 270px !important
+
+    .access
+        +coloured-box($blue)
+        img
+            border-radius: 0
+            height: 200px !important
+            width: 50% !important
+    .guidelines
+        div
+            padding: 20px !important
+@media screen and ( max-width:522px  )
+    .banner
+        input[type='text']
+            width: 88%
     
