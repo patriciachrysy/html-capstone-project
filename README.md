@@ -13,7 +13,7 @@ Pataschule website design application, personalised and adapted to fit to the si
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/patriciachrysy/using-bootstrap/8eb6e33b6651734621cd7ed6f68301a8560e9b99/index.html)
+[Live Demo Link](https://rawcdn.githack.com/patriciachrysy/html-capstone-project/09a2fb6db9f8bb1aef31ac780adc6e1bdeb06df4/index.html)
 
 
 ## Getting Started
