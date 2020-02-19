@@ -2,6 +2,11 @@
   position: relative;
 }
 
+section div div span {
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
 .logo span {
   font-family: "Coda Caption", sans-serif;
   font-size: 50px;
@@ -13,10 +18,13 @@
 
 header {
   background-color: #de4243;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
+  display: grid;
+  grid: 1fr / 1fr auto;
   align-items: center;
   padding: 10px 20px;
+
 }
 
 header img {
@@ -54,6 +62,12 @@ header nav a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1100px) {
+  .logo span {
+    margin: 0 70px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
     justify-content: unset;
@@ -61,7 +75,6 @@ header nav a {
 
   header > a {
     align-self: start;
-    margin-right: 20%;
   }
 
   header nav {
@@ -69,7 +82,7 @@ header nav a {
   }
 
   header nav a {
-    margin: 0 40px !important;
+    margin: 0 30px !important;
   }
 
   header nav span {
@@ -102,7 +115,20 @@ header nav a {
 
 @media screen and (max-width: 522px) {
   header nav a {
-    margin: 15px !important;
+    margin: 10px 5px 0 5px !important;
+    font-size: 15px !important;
+  }
+
+  header > a img {
+    position: relative
+  }
+
+  header > a span {
+    display: none;
+  }
+
+  section h2, section h3 {
+    font-size: 0.7rem;
   }
 }
 

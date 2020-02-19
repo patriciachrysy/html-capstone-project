@@ -18,10 +18,13 @@ section div div span {
 
 header {
   background-color: #de4243;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
+  display: grid;
+  grid: 1fr / 1fr auto;
   align-items: center;
   padding: 10px 20px;
+
 }
 
 header img {
@@ -59,6 +62,12 @@ header nav a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1100px) {
+  .logo span {
+    margin: 0 70px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
     justify-content: unset;
@@ -66,7 +75,6 @@ header nav a {
 
   header > a {
     align-self: start;
-    margin-right: 20%;
   }
 
   header nav {
@@ -74,11 +82,15 @@ header nav a {
   }
 
   header nav a {
-    margin: 0 40px !important;
+    margin: 0 30px !important;
   }
 
   header nav span {
     display: none;
+  }
+
+  section div div:hover{
+    height: 45% !important;
   }
 }
 
@@ -103,11 +115,27 @@ header nav a {
     margin: 10px 50px !important;
     font-size: 35px;
   }
+  section div div:hover{
+    height: 20% !important;
+  }
 }
 
 @media screen and (max-width: 522px) {
   header nav a {
-    margin: 15px !important;
+    margin: 10px 5px 0 5px !important;
+    font-size: 15px !important;
+  }
+
+  header > a img {
+    position: relative
+  }
+
+  header > a span {
+    display: none;
+  }
+
+  section h2, section h3 {
+    font-size: 0.7rem;
   }
 }
 
@@ -126,7 +154,7 @@ p {
 }
 
 .filter {
-  background-color: #ebebe8;
+  background-color: #eee;
   text-align: center;
   padding: 20px 15px;
   margin: 30px 0;
@@ -139,7 +167,7 @@ section h2 {
 }
 
 .filter h2 {
-  color: #a3a3a0;
+  color: #91939a;
 }
 
 .filter form {
@@ -183,11 +211,11 @@ section h2 {
 section {
   text-align: center;
   display: grid;
-  grid: 150px repeat(3, 350px)/repeat(3, 350px);
+  grid: auto repeat(3, 1fr)/repeat(3, 1fr);
   grid-gap: 20px;
   justify-content: center;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 20px 100px;
 }
 
 section div {
@@ -231,7 +259,7 @@ section div div a {
 }
 
 section div div:hover {
-  height: 20%;
+  height: 30%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(173, 52, 52, 0.9), rgba(222, 66, 66, 0.9));
 }
 
@@ -392,7 +420,7 @@ footer .contact input[type='submit']:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1335px) {
   .filter form {
     flex-direction: column;
     padding: 0 10px;
@@ -406,22 +434,19 @@ footer .contact input[type='submit']:hover {
   .filter form button {
     align-self: center;
   }
+
+  .filter form label {
+    width: 70%;
+  }
+
+  .filter form label input {
+    padding: 10px 5px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: space-around;
-  }
-
   section div {
-    margin: 20px 0;
-  }
-
-  section div img {
-    width: 350px;
-    height: 350px;
+    grid-column: 1 / span 3;
+    justify-self: center;
   }
 }
