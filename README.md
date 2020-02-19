@@ -6,6 +6,10 @@
 
 Pataschule website design application, personalised and adapted to fit to the site theme.
 
+> Watch the presentation video.
+
+[![screenshot](./app_video.png)](https://www.loom.com/share/a2e8b55ab9234678afd6b822d116dd20)
+
 ## Built With
 
 - HTML5, CSS3 and Sass
@@ -13,7 +17,7 @@ Pataschule website design application, personalised and adapted to fit to the si
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/patriciachrysy/html-capstone-project/09a2fb6db9f8bb1aef31ac780adc6e1bdeb06df4/index.html)
+[Live Demo Link](https://rawcdn.githack.com/patriciachrysy/html-capstone-project/5242297f557d21f3b7034cc7f4486f6a4ab8bfe5/index.html)
 
 
 ## Getting Started
