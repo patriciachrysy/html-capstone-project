@@ -1,26 +1,26 @@
-# Project Name
+# HTML Capstone Project
 
-> Project Title.
+> Pataschule website design application.
 
 ![screenshot](./app_screenshot.png)
 
-Project description.
+Pataschule website design application, personalised and adapted to fit to the site theme.
+
+> Watch the presentation video.
+
+[![screenshot](./app_video.png)](https://www.loom.com/share/a2e8b55ab9234678afd6b822d116dd20)
 
 ## Built With
 
-- HTML5 and CSS3
+- HTML5, CSS3 and Sass
 - VSCode, Linters, Stylelint, Validator.w3
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/patriciachrysy/html-capstone-project/407f220e7d45f3c2dd8a10b3ee842e930561d8ef/index.html)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -52,21 +52,16 @@ To get a local copy up and running follow these simple example steps.
 - Upload all the files in the htdocs folder of your domain
 - Access your domain name in browser
 
+## Special Credit
+- Original site design by Mathew Njuguna and others on Behance [Check it!](https://www.behance.net/gallery/25563385/PatashuleKE)
 
-
-## Authors
+## Author
 
 👤 Manezeu Patricia Chrystelle
 
 - Github: [@githubhandle](https://github.com/patriciachrysy)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle]()
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/ManezeuP)
+- Linkedin: [linkedin](https://www.linkedin.com/in/manezeu-patricia-chrystelle-095072118/)
 
 ## 🤝 Contributing
 

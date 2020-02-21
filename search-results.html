@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LunchBox</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/results.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="logo">
+            <span>LunchBox</span>
+        </a>
+        <!-- Top Navigation -->
+        <nav>
+            <a href="search-results.html">
+                <i class="fa fa-search"></i>
+                <span>RESTAURANTS</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <span>ABOUT</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-rss"></i>
+                <span>BLOG</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-bars"></i>
+                <span>MORE...</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page body -->
+    <main>
+        <!-- Filters -->
+        <div class="filter">
+            <div>
+                <h2>Filter by name, regon, town, cuisine, stars, type:</h2>
+                <form action="search-result.html" method="POST">
+                    <label>RESTAURANT NAME*:<br>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>REGION:<br>
+                        <input list="regions" name="region" />
+                        <datalist id="regions">
+                            <option value="Littoral">Littoral</option>
+                            <option value="Center">Center</option>
+                            <option value="South">South</option>
+                        </datalist>
+                    </label>
+                    <label>TOWN:<br>
+                        <input list="towns" name="town" />
+                        <datalist id="towns">
+                            <option value="Douala">Douala</option>
+                            <option value="Edea">Edea</option>
+                            <option value="Limbé">Limbé</option>
+                        </datalist>
+                    </label>
+                    <label>CUISINE:<br>
+                        <input list="cuisines" name="cuisine" />
+                        <datalist id="cuisines">
+                            <option value="African">African</option>
+                            <option value="Cameroonian">Cameroonian</option>
+                            <option value="European">European</option>
+                        </datalist>
+                    </label>
+                    <label>STARS:<br>
+                        <input list="stars" name="star" />
+                        <datalist id="stars">
+                            <option value="5 stars">5 stars</option>
+                            <option value="3 stars">3 stars</option>
+                            <option value="1 star">1 star</option>
+                        </datalist>
+                    </label>
+                    <label>TYPE:<br>
+                        <input list="types" name="type" />
+                        <datalist id="types">
+                            <option value="Fast-food">Fast-food</option>
+                            <option value="Traditional">Traditional</option>
+                            <option value="Modern">Modern</option>
+                        </datalist>
+                    </label>
+                    <button type="submit">Search</button>
+                    <button type="reset"><i class="fa fa-edit"></i> Clear filter</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- results -->
+        <section>
+            <h2>Search Results Found 7 restaurant(s)</h2>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="fouquet">
+                <div>
+                    <h3>NAME:<span>Le Fouquet</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="tonton-samy">
+                <div>
+                    <h3>NAME:<span>Tonton Samy</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="mulatako">
+                <div>
+                    <h3>NAME:<span>Ô Mulatako</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="white-house">
+                <div>
+                    <h3>NAME:<span>White House</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="Ekambi">
+                <div>
+                    <h3>NAME:<span>Chez Mama Ekambi</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="Bebey-Elame">
+                <div>
+                    <h3>NAME:<span>Bebey Elame</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="cpizza">
+                <div>
+                    <h3>NAME:<span>C'Pizza</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/fouquet.jpeg" alt="lounge-n-garden">
+                <div>
+                    <h3>NAME:<span>Lounge N Garden</span></h3>
+                    <a href="details.html"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Bottom nav -->
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">SEARCH</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">ADVERTISE</a>
+            <a href="#" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+            <a href="#">FACEBOOK</a>
+            <a href="#">TWITTER</a>
+            <a href="#">BLOG</a>
+            <a href="#">GOOGLE+</a>
+        </nav>
+
+        <!-- Contant section -->
+        <div class="contact">
+            <div>
+                <form action="#" method="POST">
+                    <h4>SUBSCRIBE</h4>
+                    <input type="text" name="subscribe" placeholder="you@example.com">
+                    <input type="submit" value="send">
+                </form>
+            </div>
+
+            <div>
+                <h4>CONTACT</h4>
+                <p>Have a question or a suggestion</p>
+                <a href="maito:0">info@lunchbox.com</a>
+            </div>
+
+            <div>
+                <h4>ABOUT</h4>
+                <p>LunchBox is an online platform that gathers many local restaurants in order to help you easilly book a table. <a href="#">Learn more...</a> 
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Socials -->
+    <div class="social">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribble"></i></a></li>
+        </ul>
+
+        <span>LunchBox, ALL RIGHTS RESERVED. POWERED BY Manezeu Patricia, Microverse sutdent</span>
+    </div>
+</body>
+</html>

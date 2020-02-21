@@ -1,0 +1,609 @@
+.logo {
+  position: relative;
+}
+
+section div div span {
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
+.logo span {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 50px;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 0 50px;
+}
+
+header {
+  background-color: #de4243;
+  display: grid;
+  grid: 1fr / 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  animation-name: top-bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes top-bounce {
+  0% {
+    top: 22%;
+  }
+
+  50% {
+    top: 28%;
+  }
+
+  100% {
+    top: 22%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: unset;
+  }
+
+  header > a {
+    align-self: start;
+  }
+
+  header nav {
+    align-self: center;
+  }
+
+  header nav a {
+    margin: 0 30px !important;
+  }
+
+  header nav span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: grid;
+    grid: 1fr 1fr/1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  header > a {
+    margin-right: 0;
+  }
+
+  header nav {
+    display: grid;
+    grid: 1fr/repeat(4, 1fr);
+  }
+
+  header nav a {
+    margin: 10px 50px !important;
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .logo span {
+    margin: 0 70px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  header nav a {
+    margin: 10px 5px 0 5px !important;
+    font-size: 15px !important;
+  }
+
+  header > a img {
+    position: relative;
+  }
+
+  header > a span {
+    display: none;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 0.7rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 550px;
+  color: white;
+  display: grid;
+  align-items: center;
+}
+
+.banner div h1 {
+  font-size: 27px;
+}
+
+.guidelines div {
+  padding: 20px 150px;
+}
+
+.banner div > div {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 0 auto 40px auto;
+  width: 50%;
+  height: 150px;
+  color: black;
+  text-align: left;
+  display: grid;
+  align-items: center;
+}
+
+footer nav a {
+  color: white;
+}
+
+.partner a {
+  color: #de4243;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.advantage a {
+  color: #bcc2c4;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.access a {
+  color: #1ca9eb;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.banner div a {
+  color: #2a2b2b;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px;
+  border-radius: 2px;
+  margin: 30px auto;
+}
+
+input[type='text'] {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+input[type='text']:focus {
+  border: 1px solid #de4243;
+  box-shadow: inset 0 1px 1px #fff, 0 0 8px #de4243;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(222, 66, 67, 0.6);
+  outline: 0 none;
+}
+
+input[type='submit'] {
+  border: none;
+  color: white;
+  background-color: #de4243;
+  padding: 11px;
+  margin-left: -10px;
+  font-weight: bold;
+}
+
+input[type='submit']:hover {
+  background: white;
+  color: #de4243;
+  border: 1px solid #de4243;
+}
+
+.guidelines {
+  display: grid;
+  grid-template-rows: 150px repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.guidelines > h2 {
+  grid-column: 1/span 2;
+  color: #de4243;
+}
+
+footer nav img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 12%;
+  left: 22%;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.guidelines img {
+  width: 40%;
+  height: 40%;
+}
+
+.partner img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.advantage img {
+  border-radius: 50%;
+  width: 20%;
+  height: 250px;
+}
+
+.access img {
+  border-radius: 0;
+  height: 200px;
+  width: 25%;
+}
+
+.guidelines img:hover {
+  width: 50%;
+  height: 50%;
+}
+
+.guidelines div h2 {
+  color: #de4243;
+}
+
+.partner {
+  padding: 20px 30px;
+  color: white;
+  background-color: #de4243;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantage {
+  padding: 20px 30px;
+  color: white;
+  background-color: #bcc2c4;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.access {
+  padding: 20px 30px;
+  color: white;
+  background-color: #1ca9eb;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding: 30px 20px;
+  background-color: black;
+  color: white;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 50px;
+  align-items: center;
+}
+
+@keyframes bounce {
+  0% {
+    top: 12%;
+  }
+
+  25% {
+    top: 17%;
+  }
+
+  50% {
+    top: 22%;
+  }
+
+  75% {
+    top: 17%;
+  }
+
+  100% {
+    top: 12%;
+  }
+}
+
+footer .logo {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+footer .contact {
+  margin: 30px 0;
+  display: grid;
+  grid: 1fr/repeat(3, 1fr);
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+footer .contact input[type='text'] {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+footer .contact input[type='text']:hover {
+  border: 1px solid #bcc2c4;
+  box-shadow: inset 0 1px 1px #fff, 0 0 8px #bcc2c4;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(188, 194, 196, 0.6);
+  outline: 0 none;
+}
+
+footer .contact input[type='submit'] {
+  border: none;
+  padding: 11px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: white;
+  background-color: #bcc2c4;
+}
+
+footer .contact input[type='submit']:hover {
+  background: white;
+  color: #bcc2c4;
+  border: 1px solid #bcc2c4;
+}
+
+footer .contact a {
+  color: #de4243;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2b2b;
+  padding: 0 15px;
+  color: #bcc2c4;
+  font-size: 13px;
+}
+
+.social ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social ul li {
+  margin-right: 10px;
+}
+
+.social ul li a {
+  color: #bcc2c4;
+}
+
+@media screen and (max-width: 768px) {
+  footer nav {
+    flex-direction: column;
+    height: auto !important;
+    align-items: center;
+  }
+
+  footer nav a {
+    margin: 10px 0;
+  }
+
+  footer nav .logo {
+    order: -1;
+  }
+
+  footer .contact div {
+    grid-column: 1/span 3;
+    margin: 10px 0;
+  }
+
+  .social {
+    flex-direction: column;
+    height: auto !important;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  input[type='text'] {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  input[type='text'] {
+    width: 80%;
+  }
+
+  .guidelines div {
+    grid-column: 1/span 2;
+  }
+
+  .advantage img {
+    height: 200px;
+  }
+
+  .access img {
+    height: 167px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner input[type='submit'] {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  .banner input[type='text'] {
+    width: 95%;
+  }
+
+  .partner {
+    padding: 30px !important;
+    color: white;
+    background-color: #de4243;
+    text-align: center;
+    height: auto;
+    display: grid;
+    grid: 1fr auto/1fr;
+    justify-items: center;
+  }
+
+  .partner img {
+    border-radius: 50%;
+    width: 40%;
+    grid-row: 1/span 1;
+    align-self: end;
+  }
+
+  .partner a {
+    color: #de4243;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin: 10px 0;
+  }
+
+  .partner div {
+    align-self: start;
+  }
+
+  .advantage {
+    padding: 30px !important;
+    color: white;
+    background-color: #bcc2c4;
+    text-align: center;
+    height: auto;
+    display: grid;
+    grid: 1fr auto/1fr;
+    justify-items: center;
+  }
+
+  .advantage img {
+    border-radius: 50%;
+    width: 40%;
+    grid-row: 1/span 1;
+    align-self: end;
+    height: 270px !important;
+  }
+
+  .advantage a {
+    color: #bcc2c4;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin: 10px 0;
+  }
+
+  .advantage div {
+    align-self: start;
+  }
+
+  .access {
+    padding: 30px !important;
+    color: white;
+    background-color: #1ca9eb;
+    text-align: center;
+    height: auto;
+    display: grid;
+    grid: 1fr auto/1fr;
+    justify-items: center;
+  }
+
+  .access img {
+    grid-row: 1/span 1;
+    align-self: end;
+    border-radius: 0;
+    height: 200px !important;
+    width: 50% !important;
+  }
+
+  .access a {
+    color: #1ca9eb;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin: 10px 0;
+  }
+
+  .access div {
+    align-self: start;
+  }
+
+  .guidelines div {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .banner input[type='text'] {
+    width: 88%;
+  }
+}
